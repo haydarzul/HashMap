@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+
+public class LatMap{
+    public static void main(String[] args){
+        HashMap<String, String> namaKota = new HashMap<>();
+        namaKota.put("SumatraUtara", "Medan");
+        namaKota.put("Bengkulu", "Bengkulu");
+        namaKota.put("Riau", "PekanBaru");
+        namaKota.put("Lampung", "BandarLampung");
+
+        namaKota.remove("Bengkulu");
+        System.out.println(namaKota);
+
+        HashMap<String, ArrayList> nama2Kota = new HashMap<>();
+        nama2Kota.put("Jawa", new ArrayList());
+        ArrayList n1 = nama2Kota.get("Jawa");
+        n1.add("Jakarta");
+        n1.add("Bandung");
+        n1.add("Surabaya");
+        n1.add("Denpasar");
+        nama2Kota.put("Jawa", n1);
+
+        System.out.println(nama2Kota);
+    }
+}
